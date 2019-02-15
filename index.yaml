@@ -3,11 +3,11 @@ entries:
   webservice:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-02-15T14:28:00.515361+07:00
+    created: 2019-02-15T14:35:06.411934+07:00
     description: A Helm chart for Kubernetes
-    digest: 32817776d6ab61dc2cae1fb175e52c7929810a469c70493fb78e517fc0e9a688
+    digest: d3097024d4e69965adc4cfa1740f75b0b6260d3936d4cbaaaeaccb06952aa7b2
     name: webservice
     urls:
-    - https://raw.githubusercontent.com/tunnelhero/hero_charts/master/webservice-0.1.0.tgz
-    version: 0.1.0
-generated: 2019-02-15T14:28:00.514569+07:00
+    - https://raw.githubusercontent.com/tunnelhero/hero_charts/master/webservice-0.1.1.tgz
+    version: 0.1.1
+generated: 2019-02-15T14:35:06.410671+07:00
