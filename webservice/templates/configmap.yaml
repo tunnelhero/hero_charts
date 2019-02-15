@@ -1,10 +1,11 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: {{ template "api.fullname" . }}
+  name: {{ include "webservice.fullname" . }}
   labels:
-    chart: {{ template "api.chart" . }}
-    release: {{ .Release.Name }}
-    heritage: {{ .Release.Service }}
+    app.kubernetes.io/name: {{ include "webservice.name" . }}
+    helm.sh/chart: {{ include "webservice.chart" . }}
+    app.kubernetes.io/instance: {{ .Release.Name }}
+    app.kubernetes.io/managed-by: {{ .Release.Service }}
 data:
 {{ toYaml .Values.app.envVars | indent 2 }}
