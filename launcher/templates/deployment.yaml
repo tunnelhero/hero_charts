@@ -32,7 +32,7 @@ spec:
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           args:
 {{ toYaml .Values.app.args | indent 10 }}
-          imagePullPolicy: {{ .Values.launcherImage.pullPolicy }}
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
           envFrom:
           - configMapRef:
               name: {{ include "launcher.fullname" . }}
