@@ -8,9 +8,16 @@ image:
   repository: nginx
   tag: stable
   pullPolicy: IfNotPresent
+  pullSecret: dockerhub
 
 nameOverride: ""
 fullnameOverride: ""
+
+app:
+  containerPort: 3000
+  healthPath: /
+  envVars:
+    {}
 
 service:
   type: ClusterIP
