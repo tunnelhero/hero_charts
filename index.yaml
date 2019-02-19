@@ -3,21 +3,21 @@ entries:
   launcher:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-02-19T11:37:21.729454+07:00
+    created: 2019-02-19T11:39:01.112668+07:00
     description: A Helm chart for Kubernetes
-    digest: ac04f8f26bd90e354154fdc327c4f302744ece154848d671face6117e08c8f81
+    digest: e08ec059843a39b82b94d4f8065513e5db36e2aab47e69096ca65241cabb35e5
     name: launcher
     urls:
-    - https://raw.githubusercontent.com/tunnelhero/hero_charts/master/launcher-0.2.0.tgz
-    version: 0.2.0
+    - https://raw.githubusercontent.com/tunnelhero/hero_charts/master/launcher-0.2.1.tgz
+    version: 0.2.1
   webservice:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-02-19T11:37:21.729794+07:00
+    created: 2019-02-19T11:39:01.11294+07:00
     description: A Helm chart for Kubernetes
-    digest: 2d9932bf37e2e4935da0dca35b991f5362ca5025a1240de134d45b4e25f2b59f
+    digest: bf95794276e72255826dd593c2fa48b12dc806d1f910c14595211191df8c6eac
     name: webservice
     urls:
     - https://raw.githubusercontent.com/tunnelhero/hero_charts/master/webservice-0.1.4.tgz
     version: 0.1.4
-generated: 2019-02-19T11:37:21.728856+07:00
+generated: 2019-02-19T11:39:01.112095+07:00
