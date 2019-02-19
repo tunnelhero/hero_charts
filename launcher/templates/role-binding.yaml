@@ -1,0 +1,17 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: {{ include "launcher.fullname" . }}
+  labels:
+    app.kubernetes.io/name: {{ include "launcher.name" . }}
+    helm.sh/chart: {{ include "launcher.chart" . }}
+    app.kubernetes.io/instance: {{ .Release.Name }}
+    app.kubernetes.io/managed-by: {{ .Release.Service }}
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: {{ include "launcher.fullname" . }}
+subjects:
+- kind: ServiceAccount
+  name: {{ template "launcher.fullname" . }}
+  namespace: {{ .Release.Namespace }} 

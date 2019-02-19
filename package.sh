@@ -10,6 +10,7 @@ usage()
 }
 
 helm package webservice
+helm package launcher
 
 helm serve --repo-path ./ &
 
