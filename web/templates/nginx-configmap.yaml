@@ -8,4 +8,4 @@ metadata:
     app.kubernetes.io/instance: {{ .Release.Name }}
     app.kubernetes.io/managed-by: {{ .Release.Service }}
 data: |
-{{ toYaml .Values.nginx.config | indent 2 }}
+{{ .Values.nginx.config | indent 2 }}
