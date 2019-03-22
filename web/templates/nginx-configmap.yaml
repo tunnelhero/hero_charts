@@ -7,5 +7,6 @@ metadata:
     helm.sh/chart: {{ include "web.chart" . }}
     app.kubernetes.io/instance: {{ .Release.Name }}
     app.kubernetes.io/managed-by: {{ .Release.Service }}
-data: |
-{{ .Values.nginx.config | indent 2 }}
+data:
+  conf: |
+{{ .Values.nginx.config | indent 4 }}
