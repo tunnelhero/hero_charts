@@ -16,11 +16,11 @@ helm servecm --storage local --chart-url https://raw.githubusercontent.com/tunne
 
 sleep 1
 
-kill %1
+ps ax | grep c[h]artmuseum | awk '{print $1}' | xargs kill
 
-# in_file=index.yaml
-# out_file=index.new.yaml
+in_file=index-cache.yaml
+out_file=index.yaml
 
 # # cat $in_file | sed 's#http://127.0.0.1:8879#https://raw.githubusercontent.com/tunnelhero/hero_charts/master#g' >$out_file
 
-# mv $out_file $in_file
+mv $in_file $out_file
