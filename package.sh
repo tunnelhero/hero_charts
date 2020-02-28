@@ -8,9 +8,9 @@ usage() {
 
 }
 
-helm package webservice
-helm package launcher
-helm package web
+helm package --destination charts/ webservice
+helm package --destination charts/ launcher
+helm package --destination charts/ web
 
 helm servecm --storage local --chart-url https://raw.githubusercontent.com/tunnelhero/hero_charts/master --storage-local-rootdir ./ &
 
